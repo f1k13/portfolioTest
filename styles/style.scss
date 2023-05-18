@@ -72,7 +72,7 @@ header{
 
 
 .info__content{
-  padding-top: 105px;
+  padding: 105px 0px;
   width: 100%;
 
 }
@@ -117,9 +117,9 @@ header{
 
 
 }
-.hui{}
 .gray{
   background-color: #F6F6F6;
+  padding: 60px 0px;
 
 }
 .title-section{
@@ -154,7 +154,7 @@ header{
     padding-top: 50px;
 
     /* Black */
-    width: 798px;
+    width: 83%;
     color: #181818;
 
   }
@@ -314,9 +314,12 @@ header{
     line-height: 21px;
     text-align: center;
     color: #828282;
-    text-decoration: none;
+    text-decoration: underline;
+    
   }
+  
 }
+
 
 .modal {
   position: fixed;
@@ -420,4 +423,48 @@ header{
 .form__submit-btn {
   display: flex;
   margin-top: 65px;
+}
+
+@media (max-width: 716px) {
+  .container{
+    max-width: 716px;
+  }
+  .info__content{
+    width: 100%;
+  }
+  .about__content{
+    width: 100%;
+    
+  }
+  
+  .stack__skills{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .container{
+    max-width: 375px;
+  }
+  .info__content{
+    width: 100%;
+  }
+  .about__content{
+    width: 100%;
+    
+  }
+  .portfolio__content{
+    width: 100%;
+  }
+  .stack__skills{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfoli{
+    width: 100%;
+  }
+  
+
 }

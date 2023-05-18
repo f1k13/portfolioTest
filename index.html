@@ -25,6 +25,11 @@
                         <li class="item-list">Контакты</li>
                     </ul>
                 </nav>
+                <div class="navbar__burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </section>
     </header>
@@ -35,14 +40,17 @@
                     <h2>Егор Пономарев</h2>
                     <p>Frontend developer 18 лет, Екатеринбург</p>
                 </div>
-                <img class="img-photo" src="img/photo-desk%201.svg" alt="">
+                <picture>
+                    <source media=(max-width: 716px) srcset="img/photo-mobile 1.jpg">
+                    <img class="img-photo" src="img/photo-desk%201.svg" alt="">
+                </picture>
             </div>
         </section>
         <section class="section gray">
             <div class="container about__content">
                 <h2 class="title-section">Обо мне</h2>
                 <div class="about__text">
-                    <p>Привет, меня зовут Семен. Я Frontend разработчик из Челябинска. Мне интересна веб-разработка и все что этим связано.</p>
+                    <p>Привет, меня зовут Егор. Я Frontend разработчик из Челябинска. Мне интересна веб-разработка и все что этим связано.</p>
                     <p>Сейчас я учусь на курсе "Frontend Dev" в Napoleon IT School.</p>
                     <p>Планирую и дальше развиваться в этой сфере. Рассмотрю любое коммерческое предложение о сотрудничестве.</p>
                 </div>
@@ -82,11 +90,11 @@
             <div class="container portfolio__content">
                 <h2 class="title-section">Портфолио</h2>
                 <div class="img__portfolio">
-                    <img src="img/MebelChel.svg" alt="">
+                    <img class="portfolio" src="img/MebelChel.svg" alt="">
                     <a href="">MebelChel - изготовление мебели на заказ</a>
                 </div>
                 <div class="img__portfolio">
-                    <img src="img/shawarma-bg%201.svg" alt="">
+                    <img class="portfolio" src="img/shawarma-bg%201.svg" alt="">
                     <a href="">Shawarma - лучшая шаурма в городе</a>
                 </div>
             </div>
@@ -97,7 +105,7 @@
             <div class="container footer">
                 <h2 class="title-section">Контакты</h2>
                 <p class="text-footer">Хотите связаться со мной или узнать больше?</p>
-                <button onclick="modalOpen()" class="btn__contact">Написать мне</button>
+                <button class="btn__contact">Написать мне</button>
                 <div class="social__footer">
                     <a href=""><img class="img-social" src="img/vk%20(1).svg" alt=""></a>
                     <a href=""><img class="img-social" src="img/telegram.svg" alt=""></a>
@@ -109,16 +117,16 @@
     </footer>
     <div class="modal">
         <div class="modal__wrapper">
-            <img onclick="modalClose()" class="close-modal" src="img/close.svg" alt="">
+            <img class="close-modal" src="img/close.svg" alt="">
             <h1 class="modal__title">ОСТАВЬТЕ ЗАЯВКУ! <br> Я ПОЗВОНЮ ВАМ В БЛИЖАЙШЕЕ ВРЕМЯ </h1>
             <form class="modal__form">
                 <div class="form__inputs">
                     <label for="name" class="form__text">Имя</label>
-                    <input id="name" type="text">
+                    <input class="form__input" id="name" type="text">
                 </div>
                 <div class="form__inputs">
                     <label for="phone" class="form__text">Телефон</label>
-                    <input  id="phone" type="text" >
+                    <input class="form__input" id="phone" type="text" >
                 </div>
                 <div class="form__submit-btn">
                     <p class="submit-text">*Нажимая кнопку, я даю свое согласие на обработку персональных данных</p>
