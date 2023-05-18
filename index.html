@@ -18,11 +18,11 @@
                 <img class="img-logo" src="img/logo%20(1).svg" alt="">
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li class="item-list">Домой</li>
-                        <li class="item-list">Обо мне</li>
-                        <li class="item-list">Навыки</li>
-                        <li class="item-list">Портфолио</li>
-                        <li class="item-list">Контакты</li>
+                        <li class="item-list"><a href="#home">Домой</a></li>
+                        <li class="item-list"><a href="#about">Обо мне</a></li>
+                        <li class="item-list"><a href="#skills">Навыки</a></li>
+                        <li class="item-list"><a href="#portfolio">Портфолио</a></li>
+                        <li class="item-list"><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="navbar__burger">
@@ -35,29 +35,29 @@
     </header>
     <main>
         <section class="section">
-            <div class="container info__content">
+            <div id="home" class="container info__content">
                 <div class="info__text">
                     <h2>Егор Пономарев</h2>
                     <p>Frontend developer 18 лет, Екатеринбург</p>
                 </div>
                 <picture>
-                    <source media=(max-width: 716px) srcset="img/photo-mobile 1.jpg">
+                    <source class="img-mobile" media="(max-width: 768px)" srcset="img/mobile-img.jpg">
                     <img class="img-photo" src="img/photo-desk%201.svg" alt="">
                 </picture>
             </div>
         </section>
         <section class="section gray">
-            <div class="container about__content">
+            <div id="about" class="container about__content">
                 <h2 class="title-section">Обо мне</h2>
                 <div class="about__text">
-                    <p>Привет, меня зовут Егор. Я Frontend разработчик из Челябинска. Мне интересна веб-разработка и все что этим связано.</p>
+                    <p>Привет, меня зовут Егор. Я Frontend разработчик из Екатеринбурга. Мне интересна веб-разработка и все что этим связано.</p>
                     <p>Сейчас я учусь на курсе "Frontend Dev" в Napoleon IT School.</p>
                     <p>Планирую и дальше развиваться в этой сфере. Рассмотрю любое коммерческое предложение о сотрудничестве.</p>
                 </div>
             </div>
         </section>
         <section class="section">
-            <div class="container skills__content">
+            <div id="skills" class="container skills__content">
                 <h2 class="title-section">Навыки</h2>
                 <div class="card__skills">
                     <p>Используемые технологии:</p>
@@ -87,7 +87,7 @@
             </div>
         </section>
         <section class="section gray">
-            <div class="container portfolio__content">
+            <div id="portfolio" class="container portfolio__content">
                 <h2 class="title-section">Портфолио</h2>
                 <div class="img__portfolio">
                     <img class="portfolio" src="img/MebelChel.svg" alt="">
@@ -102,7 +102,7 @@
     </main>
     <footer>
         <section class="section">
-            <div class="container footer">
+            <div id="contacts" class="container footer">
                 <h2 class="title-section">Контакты</h2>
                 <p class="text-footer">Хотите связаться со мной или узнать больше?</p>
                 <button class="btn__contact">Написать мне</button>

@@ -67,8 +67,10 @@ header {
   transition: all 0.2s ease-in-out;
   background-color: #000000;
 }
-
-.item-list {
+.item-list{
+  list-style-type: none ;
+}
+.item-list a {
   list-style-type: none;
   font-family: "Ubuntu";
   font-style: normal;
@@ -78,9 +80,10 @@ header {
   color: #828282;
   transition: 0.2s ease-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.item-list:hover {
+.item-list:hover a {
   color: black;
   transition: 0.2s ease-out;
 }
@@ -168,7 +171,6 @@ header {
   text-align: center;
   padding-top: 50px;
   /* Black */
-  width: 83%;
   color: #181818;
 }
 
@@ -311,6 +313,11 @@ header {
 .img-social {
   width: 75px;
   height: 75px;
+  ransition: 0.2s ease-in-out;
+}
+.img-social:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
 
 .text-footer-social {
@@ -426,16 +433,20 @@ header {
   width: 350px;
   height: 75px;
   color: #FFFFFF;
+  transition: 0.2s ease-in-out;
 }
-
+.btn-submit:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
 .form__submit-btn {
   display: flex;
   margin-top: 65px;
 }
 
-@media (max-width: 716px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 716px;
+    max-width: 768px;
   }
   .info__content {
     width: 100%;
@@ -461,9 +472,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .about__text p{
-    width: 80%;
   }
   .portfolio__content{
     width: 100%;
@@ -539,10 +547,18 @@ header {
   .navbar__list.active{
     left: 0;
   }
+  .info__text{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
 @media (max-width: 375px) {
   .container {
-    max-width: 716px;
+    max-width: 375px;
   }
   .info__content {
     width: 100%;
@@ -608,6 +624,9 @@ header {
   .btn-submit{
     width: 325px;
     margin-bottom: 20px;
+  }
+  .img-mobile{
+    width: 100%;
   }
 }
 
